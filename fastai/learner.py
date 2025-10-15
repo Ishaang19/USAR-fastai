@@ -926,7 +926,7 @@ raise RuntimeError(f"Loading model {fname=}, attempted to import from `fastcore.
 
 except AttributeError as e: 
 
-e.args = [f"Custom classes or functions exported with your `Learner` not available in namespace. Re-declare/import before loading:\n\t{e.args[0]}"] 
+e.args = [f"Custom classes or functions exported with your `Learner` not available in namespace.\nRe-declare/import before loading:\n\t{e.args[0]}"] 
 
 raise 
 
